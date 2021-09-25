@@ -3,7 +3,7 @@ terraform {
     organization = "avnes"
 
     workspaces {
-      name = "valyria-vm-impl"
+      name = "valyria-vm"
     }
   }
 }
