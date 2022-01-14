@@ -18,6 +18,9 @@
             "lockFileMaintenance"
         ],
         "dependencyDashboardApproval": false,
-        "stabilityDays": 0
+        "stabilityDays": 0,
+        "matchUpdateTypes": ["minor", "patch"],
+        "matchCurrentVersion": "!/^0/",
+        "automerge": true
     }]
 }
