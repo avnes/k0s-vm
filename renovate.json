@@ -16,9 +16,7 @@
             "minor",
             "lockFileMaintenance"
         ],
-        "dependencyDashboardApproval": false,
         "stabilityDays": 0,
-        "matchCurrentVersion": "!/^0/",
         "automerge": true
     }]
 }
