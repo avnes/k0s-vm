@@ -17,6 +17,8 @@
             "lockFileMaintenance"
         ],
         "stabilityDays": 0,
-        "automerge": true
+        "automerge": true,
+        "matchCurrentVersion": "!/^0/",
+        "ignoreTests": true
     }]
 }
