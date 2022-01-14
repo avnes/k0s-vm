@@ -19,6 +19,15 @@
         "stabilityDays": 0,
         "automerge": true,
         "matchCurrentVersion": "!/^0/",
-        "ignoreTests": true
+        "ignoreTests": true,
+        "dependencyDashboardApproval": false
+    },{
+        "matchUpdateTypes": [
+            "major"
+        ],
+        "stabilityDays": 0,
+        "automerge": false,
+        "dependencyDashboard": true,
+        "dependencyDashboardApproval": false
     }]
 }
