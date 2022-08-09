@@ -1,6 +1,4 @@
 valyria_vm_project_name         = "valyria"
-valyria_vm_cloud_image_base_url = "https://cloud.centos.org/centos/8-stream/x86_64/images"
-valyria_vm_cloud_image_name     = "CentOS-Stream-GenericCloud-8-20210603.0.x86_64.qcow2"
 
 valyria_vm_nodes = {
     "ctrl-node"     = {
