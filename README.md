@@ -1,4 +1,4 @@
-# valyria-vm
+# k0s-vm
 
 My implementation of the terraform-libvirt-vm repository.
 
