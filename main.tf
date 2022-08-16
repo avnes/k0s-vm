@@ -1,4 +1,4 @@
-module "kubeadm_vm" {
+module "valyria_vm" {
     source        = "github.com/avnes/terraform-libvirt-vm"
     project_name  = var.project_name
     network_name  = var.network_name
