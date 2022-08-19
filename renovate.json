@@ -6,7 +6,7 @@
     "onboarding": false,
     "platform": "github",
     "repositories": [
-        "avnes/valyria-vm"
+        "avnes/k0s-vm"
     ],
     "packageRules": [{
         "matchUpdateTypes": [

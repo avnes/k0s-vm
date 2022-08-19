@@ -1,4 +1,4 @@
-project_name = "valyria"
+project_name = "k0s"
 network_name = "bridged-network"
 
 nodes = {
