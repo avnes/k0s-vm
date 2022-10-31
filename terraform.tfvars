@@ -3,7 +3,7 @@ network_name = "bridged-network"
 
 nodes = {
     "ctrl-node"     = {
-        name        = "k0s-controlplane.anyops.dev",
+        name        = "k0s-controlplane.anyops.site",
         vcpu        = 2,
         memory      = "4096",
         disk_pool   = "default",
@@ -11,7 +11,7 @@ nodes = {
         mac         = "52:54:00:11:11:00",
     },
     "worker-node01" = {
-        name        = "k0s-node01.anyops.dev",
+        name        = "k0s-node01.anyops.site",
         vcpu        = 1,
         memory      = "4096",
         disk_pool   = "default",
@@ -19,7 +19,7 @@ nodes = {
         mac         = "52:54:00:11:11:01",
     },
     "worker-node02" = {
-        name        = "k0s-node02.anyops.dev",
+        name        = "k0s-node02.anyops.site",
         vcpu        = 1,
         memory      = "4096",
         disk_pool   = "default",
@@ -27,7 +27,7 @@ nodes = {
         mac         = "52:54:00:11:11:02",
     },
     "worker-node03" = {
-        name        = "k0s-node03.anyops.dev",
+        name        = "k0s-node03.anyops.site",
         vcpu        = 1,
         memory      = "4096",
         disk_pool   = "default",

@@ -5,7 +5,7 @@
 
 # Install and configure HA proxy on k0s-controlplane
 
-if [[ $(hostname) == 'k0s-controlplane.anyops.dev' ]]; then
+if [[ $(hostname) == 'k0s-controlplane' || $(hostname) == 'k0s-controlplane.anyops.site' ]]; then
     dnf -y install haproxy
     cat <<EOF | tee /etc/haproxy/conf.d/k0s.cfg
 #---------------------------------------------------------------------
@@ -34,23 +34,23 @@ frontend k0s_dashboard_frontend
 backend k0s_backend
     mode http
     balance source
-    server k0s-node01.anyops.dev 10.0.1.21:32080 check
-    server k0s-node02.anyops.dev 10.0.1.22:32080 check
-    server k0s-node03.anyops.dev 10.0.1.23:32080 check
+    server k0s-node01.anyops.site 10.0.1.21:32080 check
+    server k0s-node02.anyops.site 10.0.1.22:32080 check
+    server k0s-node03.anyops.site 10.0.1.23:32080 check
 
 backend k0s_secure_backend
     mode http
     balance source
-    server k0s-node01.anyops.dev 10.0.1.21:32443 check
-    server k0s-node02.anyops.dev 10.0.1.22:32443 check
-    server k0s-node03.anyops.dev 10.0.1.23:32443 check
+    server k0s-node01.anyops.site 10.0.1.21:32443 check
+    server k0s-node02.anyops.site 10.0.1.22:32443 check
+    server k0s-node03.anyops.site 10.0.1.23:32443 check
 
 backend k0s_dashboard_backend
     mode http
     balance source
-    server k0s-node01.anyops.dev 10.0.1.21:32090 check
-    server k0s-node02.anyops.dev 10.0.1.22:32090 check
-    server k0s-node03.anyops.dev 10.0.1.23:32090 check
+    server k0s-node01.anyops.site 10.0.1.21:32090 check
+    server k0s-node02.anyops.site 10.0.1.22:32090 check
+    server k0s-node03.anyops.site 10.0.1.23:32090 check
 EOF
     systemctl enable haproxy
     systemctl start haproxy
