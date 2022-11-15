@@ -34,23 +34,23 @@ frontend k0s_dashboard_frontend
 backend k0s_backend
     mode http
     balance source
-    server k0s-node01.anyops.site 10.0.1.21:32080 check
-    server k0s-node02.anyops.site 10.0.1.22:32080 check
-    server k0s-node03.anyops.site 10.0.1.23:32080 check
+    server k0s-node01.anyops.site 192.168.1.121:32080 check
+    server k0s-node02.anyops.site 192.168.1.122:32080 check
+    server k0s-node03.anyops.site 192.168.1.123:32080 check
 
 backend k0s_secure_backend
     mode http
     balance source
-    server k0s-node01.anyops.site 10.0.1.21:32443 check
-    server k0s-node02.anyops.site 10.0.1.22:32443 check
-    server k0s-node03.anyops.site 10.0.1.23:32443 check
+    server k0s-node01.anyops.site 192.168.1.121:32443 check
+    server k0s-node02.anyops.site 192.168.1.122:32443 check
+    server k0s-node03.anyops.site 192.168.1.123:32443 check
 
 backend k0s_dashboard_backend
     mode http
     balance source
-    server k0s-node01.anyops.site 10.0.1.21:32090 check
-    server k0s-node02.anyops.site 10.0.1.22:32090 check
-    server k0s-node03.anyops.site 10.0.1.23:32090 check
+    server k0s-node01.anyops.site 192.168.1.121:32090 check
+    server k0s-node02.anyops.site 192.168.1.122:32090 check
+    server k0s-node03.anyops.site 192.168.1.123:32090 check
 EOF
     systemctl enable haproxy
     systemctl start haproxy
