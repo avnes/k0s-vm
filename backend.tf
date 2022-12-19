@@ -3,7 +3,7 @@ terraform {
     organization = "avnes"
 
     workspaces {
-      name = "k0s-vm"
+      name = "odin-vm"
     }
   }
 }

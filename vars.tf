@@ -24,6 +24,6 @@ variable "nodes" {
 
 variable "custom_cmd" {
   type        = string
-  default     = "curl https://raw.githubusercontent.com/avnes/k0s-vm/main/k0s-vm-override.sh | bash"
+  default     = "curl https://raw.githubusercontent.com/avnes/odin-vm/main/odin-vm-override.sh | bash"
   description = "Run one custom runcmd in cloud-init"
 }
