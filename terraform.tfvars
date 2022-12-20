@@ -12,7 +12,7 @@ nodes = {
   },
   "worker-node01" = {
     name      = "hugin.anyops.site",
-    vcpu      = 1,
+    vcpu      = 2,
     memory    = "4096",
     disk_pool = "default",
     disk_size = "50000000000",
@@ -20,7 +20,7 @@ nodes = {
   },
   "worker-node02" = {
     name      = "munin.anyops.site",
-    vcpu      = 1,
+    vcpu      = 2,
     memory    = "4096",
     disk_pool = "default",
     disk_size = "50000000000",
