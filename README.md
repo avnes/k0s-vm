@@ -2,7 +2,7 @@
 
 My implementation of the terraform-libvirt-vm repository.
 
-State is being saved to <https://app.terraform.io/>
+State is being saved to <https://app.terraform.io/>.
 
 Remember to edit odin-vm workspace on <https://app.terraform.io/> and set Execution Mode = Local.
 
